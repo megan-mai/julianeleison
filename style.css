@@ -94,7 +94,6 @@ a:hover{
     text-align: center;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    
     z-index: 0;
 }
 
@@ -213,23 +212,11 @@ ol.carousel-indicators {
 
 
 @media only screen and (max-width: 900px) {
-
-
-
-    
-
     body{
-
-
         transform:  rotate(90deg) translateY(-100%)!important;
         transform-origin: top left!important;
         height: 100vw; 
         width: 100vh;
-        /* height: 100vw;
-      */
-        /* width: 100vh !important; */
-        /* height: 100vw !important; */
-        /* transform: translate(-23%, 43%) rotate(90deg) !important; */
 
 
     }
