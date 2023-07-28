@@ -1,0 +1,242 @@
+@font-face {
+    font-family: garamond;
+    src: url(ebgaramond.ttf);
+  }
+
+  @font-face {
+    font-family: italic;
+    src: url(italicsgaramond.ttf);
+    font-style: italic;
+  }
+
+
+
+
+html, body {
+    background-color: black !important;
+    height: 100%;
+    overflow: hidden;
+    font-size: 22px;
+    font-family: "garamond" !important;
+}
+
+#name{
+font-size: 24px;
+font-family: italic !important;
+}
+
+#about{
+    line-height: 1.4em !important;
+}
+
+#about-text{
+    height: 300px;
+}
+
+a#email{
+    text-decoration: underline !important;
+}
+
+ol.carousel-indicators li{
+    background-color: transparent;
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  width: .3em;
+  border-radius: 20px;
+  height: .3em;
+  margin: .2em;
+  border-radius: 100px;
+  border-style: solid;
+  /* border-color: white; */
+}
+
+ol.carousel-indicators li.active {
+    opacity: 100%;
+    background-color: black;
+}
+
+
+ol.carousel-indicators {
+    margin-top: 3em;
+    position: relative !important;
+    width: auto;
+}
+
+
+
+
+a{
+    color: inherit !important;
+    transition: 0.1s;
+}
+
+a:hover{
+    text-decoration: none !important;
+    opacity: 50%;
+
+
+
+}
+
+
+#about{
+    margin-top: 2em;
+
+}
+
+#backgroundCarousel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    z-index: 0;
+}
+
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    cursor:pointer;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+ 
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    line-height: 1.3em;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease-in-out !important;
+  }
+
+
+#bio{
+    /* color: black; */
+    line-height: 2em;
+    position: absolute;
+    z-index: 3;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    width: 22%;
+    min-width: 300px;
+    text-align: center;
+}
+
+
+.carousel-item {
+	transition: -webkit-transform 0.5s ease;
+	transition: transform 0.5s ease;
+	transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+	-webkit-backface-visibility: visible;
+	        backface-visibility: visible;
+}
+
+.hidden{
+    display: none;
+}
+
+#footer{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+}
+
+#container{
+    background-color: black !important;
+}
+
+
+
+#arrow_container{
+    display: flex;
+    justify-content: space-between;
+    width: 8%;
+    margin-top: .6em;
+    padding-right: 2em;
+    float: right;
+}
+
+.prev_button{
+width: 50%;
+height: 100%;
+}
+
+.prev_button:hover{
+    cursor: url(caret-left.png), auto;
+}
+
+.next_button{
+    cursor: url(caret-right.png), auto;
+    width: 50%;
+    height: 100%;
+}
+
+
+@media only screen and (max-width: 900px) {
+    body {
+      font-size: 20px !important;
+
+    }
+    #bio{
+        top: 38% !important;
+        min-width:350px!important;
+    }
+
+
+ol.carousel-indicators {
+    margin-top: 2em;
+ 
+}
+
+#about-text{
+    height: 50px;
+
+}
+
+#work-text{
+    height: 100px;
+}
+
+  }
+
+
+@media only screen and (max-width: 900px) {
+
+   
+    html{
+        /* transform: rotate(90deg) !important;
+        height: 100vw;
+        width: 100vh; */
+
+    }
+
+    
+
+    body{
+        /* width: 100vh !important;
+        height: 100vw !important; */
+        /* transform: translate(-23%, 43%) rotate(90deg) !important; */
+
+
+    }
+    
+    #backgroundCarousel,.carousel-inner, .carousel-item, img{
+        /* height: 100vh !important;
+        width: 100vw!important; */
+      
+    }
+
+
+}
