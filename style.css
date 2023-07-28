@@ -214,27 +214,29 @@ ol.carousel-indicators {
 
 @media only screen and (max-width: 900px) {
 
-   
-    html{
-        /* transform: rotate(90deg) !important;
-        height: 100vw;
-        width: 100vh; */
 
-    }
 
     
 
     body{
-        /* width: 100vh !important;
-        height: 100vw !important; */
+
+
+        transform:  rotate(90deg) translateY(-100%)!important;
+        transform-origin: top left!important;
+        height: 100vw; 
+        width: 100vh;
+        /* height: 100vw;
+      */
+        /* width: 100vh !important; */
+        /* height: 100vw !important; */
         /* transform: translate(-23%, 43%) rotate(90deg) !important; */
 
 
     }
     
     #backgroundCarousel,.carousel-inner, .carousel-item, img{
-        /* height: 100vh !important;
-        width: 100vw!important; */
+        height: 100vw !important;
+        width: 100vh!important;
       
     }
 
