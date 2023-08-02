@@ -49,35 +49,44 @@
 
         <div id="links">
           <a id="about" class="accordion">About</a>
-          |
+          | 
           <a id="work" class="accordion">Work</a>
 
         </div>
 
-        
+        <nav class="nav">
+          <div>
+          <a class="prev_button" href="#backgroundCarousel" role="button"
+            data-slide="prev">
+            ←
+          </a>
+        </div>
+     
+          <ol class="carousel-indicators">
+            <li data-target="#backgroundCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#backgroundCarousel" data-slide-to="1" ></li>
+            <li data-target="#backgroundCarousel" data-slide-to="2" ></li>
+          </ol>
+      
 
-        <ol class="carousel-indicators">
-          <li data-target="#backgroundCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#backgroundCarousel" data-slide-to="1" ></li>
-          <li data-target="#backgroundCarousel" data-slide-to="2" ></li>
-        </ol>
+        <div>
+
+          <a class="next_button" href="#backgroundCarousel" role="button"
+            data-slide="next">
+            →
+          </a>
+        </div>
+        </nav>
+
 
 
 
 
       </div>
 
-      <footer id="footer">
-        <a class="prev_button" href="#backgroundCarousel" role="button"
-          data-slide="prev">
+      
+     
 
-        </a>
-        <a class="next_button" href="#backgroundCarousel" role="button"
-          data-slide="next">
-
-        </a>
-
-      </footer>
 
       <!-- CAROUSEL -->
       <div id="backgroundCarousel" class="carousel slide" data-ride="carousel">

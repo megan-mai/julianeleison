@@ -20,9 +20,11 @@ html, body {
     font-family: "garamond" !important;
 }
 
+
+
 #name{
 font-size: 24px;
-font-family: italic !important;
+font-style: italic !important;
 }
 
 #about{
@@ -39,17 +41,35 @@ a#email{
 
 ol.carousel-indicators li{
     background-color: transparent;
+
 }
 
 ol.carousel-indicators li,
 ol.carousel-indicators li.active {
   width: .3em;
-  border-radius: 20px;
   height: .3em;
   margin: .2em;
   border-radius: 100px;
   border-style: solid;
-  /* border-color: white; */
+  border-width: 1px;
+}
+
+ol.carousel-indicators{
+    vertical-align: middle;
+    position: static !important;
+    height: 100% !important;
+
+}
+
+.nav{
+    display: inline;
+    justify-content: center;
+    margin-top: 2em;
+
+}
+
+.next_button, .prev_button{
+    padding: 0 !important;
 }
 
 ol.carousel-indicators li.active {
@@ -58,13 +78,10 @@ ol.carousel-indicators li.active {
 }
 
 
-ol.carousel-indicators {
-    margin-top: 3em;
-    position: relative !important;
-    width: auto;
+.carousel-indicators {
+margin: .7em .6em 0 .6em !important;    
+
 }
-
-
 
 
 a{
@@ -119,6 +136,7 @@ a:hover{
 
 #bio{
     /* color: black; */
+    opacity: .99 !important;
     line-height: 2em;
     position: absolute;
     z-index: 3;
@@ -167,19 +185,20 @@ a:hover{
     float: right;
 }
 
-.prev_button{
-width: 50%;
-height: 100%;
-}
 
 .prev_button:hover{
-    cursor: url(caret-left.png), auto;
+    cursor: pointer;
+    font-size: 32px;
 }
 
-.next_button{
-    cursor: url(caret-right.png), auto;
-    width: 50%;
-    height: 100%;
+.prev_button:active, .next_button:active{
+    font-size: 22px;
+}
+
+
+.next_button:hover{
+    cursor: pointer;
+    font-size: 32px;
 }
 
 
@@ -189,15 +208,15 @@ height: 100%;
 
     }
     #bio{
-        top: 38% !important;
+        top: 30% !important;
         min-width:350px!important;
     }
 
+    .nav{
+        margin-top: 1em;
+    }
 
-ol.carousel-indicators {
-    margin-top: 2em;
- 
-}
+
 
 #about-text{
     height: 50px;

@@ -49,36 +49,6 @@ var open = true;
 });
 
 
-// $('#backgroundCarousel').on('slid.bs.carousel', function () {
-//     var bio = document.getElementById("bio");
-//     var indicators = document.getElementsByClassName("carousel-indicators");
-//     var active = document.getElementsByClassName("carousel-item active");
-    
-//     var slideNumber = active[0].id;
-    
-//     if (slideNumber == 'first-slide'){
-//         bio.style.color = 'black';
-        
-
-    
-//     } else if (slideNumber == "second-slide"){
-//         bio.style.color = 'white';
-
-//         // indicators[0].innerHTML = "○";
-//         // indicators[1].innerHTML = "●";
-//         // indicators[2].innerHTML = "○";
-
-    
-//     }else if (slideNumber == "third-slide"){
-//         bio.style.color = 'white';
-//     }
-//     else{
-//         null;
-//     };  
-// })
-
-
-
 $('#backgroundCarousel').on('slid.bs.carousel', function () {
     var bio = document.getElementById("bio");
     var indicators = document.getElementsByClassName("carousel-indicators")[0].getElementsByTagName("li");
@@ -89,19 +59,17 @@ $('#backgroundCarousel').on('slid.bs.carousel', function () {
         if(slides[i].classList.contains('active')){
            bio.style.color = colors[i];
             for(let i =0; i < 3; i++){
-             indicators[i].style.backgroundColor = 'transparent';
+                indicators[i].style.backgroundColor = 'transparent';
             }
-           indicators[i].style.backgroundColor = colors[i];;
-
+            indicators[i].style.backgroundColor = colors[i];;
         }
-
     }
 })
 
 
 
 
-$('#backgroundCarousel').on('slid.bs.carousel', function () {
+$('#backgroundCarousel').on('slide.bs.carousel', function () {
     var indicators = document.getElementsByClassName("ol.carousel-indicators");
     const colors = ["black","white","white"];
     
