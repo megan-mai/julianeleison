@@ -240,7 +240,7 @@ a:hover{
         transform:  rotate(90deg) translateY(-100%)!important;
         transform-origin: top left!important;
         height: 100vw; 
-        width: 100vh;
+        width: 110vh;
 
 
     }
