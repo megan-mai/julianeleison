@@ -135,7 +135,6 @@ a#links:hover{
 
 #bio{
     /* color: black; */
-    hyphens: auto;
     opacity: .99 !important;
     line-height: 2em;
     position: absolute;
@@ -222,6 +221,8 @@ a#links:hover{
     }
 
     #work-text{
+        hyphens: auto;
+
         height: 80px;
     }
 
@@ -229,7 +230,6 @@ a#links:hover{
 
 
 @media only screen and (max-width: 900px) {
-
 
 .prev_button:hover, .next_button:hover{
     font-size: 22px;
