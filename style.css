@@ -223,6 +223,7 @@ a#links:hover{
     #work-text{
         hyphens: manual !important;
         height: 80px;
+        color: red;
     }
 
 }
