@@ -221,8 +221,7 @@ a#links:hover{
     }
 
     #work-text{
-        hyphens: auto;
-
+        hyphens: manual !important;
         height: 80px;
     }
 
