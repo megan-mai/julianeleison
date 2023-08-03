@@ -222,8 +222,8 @@ a#links:hover{
 
     #work-text{
         -webkit-hyphens: auto !important;
+        hyphens: auto;
         height: 80px;
-        color: red;
     }
 
 }
