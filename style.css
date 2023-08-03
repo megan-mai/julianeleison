@@ -231,6 +231,11 @@ a:hover{
 
 
 @media only screen and (max-width: 900px) {
+
+    html,body{
+        overflow: scroll;
+
+    }
     body{
         transform:  rotate(90deg) translateY(-100%)!important;
         transform-origin: top left!important;
