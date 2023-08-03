@@ -101,14 +101,16 @@ a:hover{
 }
 
 #backgroundCarousel{
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: relative !important;
+    top: 0;
+    left:0;
+    /* top: 50%;
+    left: 50%; */
     width: 100%;
     text-align: center;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    z-index: 0;
+    /* -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    /* z-index: 0; */
 }
 
 
@@ -132,14 +134,15 @@ a:hover{
 
 
 #bio{
+    position: absolute;
     /* color: black; */
     opacity: .99 !important;
     line-height: 2em;
     position: absolute;
-    z-index: 3;
-    -webkit-transform: translate3d(0,0,0);
-    top: 40%;
+    /* z-index: 3; */
+    top: 35%;
     left: 50%;
+    right: 0;
     transform: translateY(-50%);
     transform: translateX(-50%);
     width: 22%;
@@ -164,12 +167,15 @@ a:hover{
     position: absolute;
     display: flex;
     width: 100%;
-    z-index: 1;
+    /* z-index: 1; */
     height: 100vh;
 }
 
 #container{
     background-color: black !important;
+    position: relative !important;
+    top: 0;
+    left: 0;
 }
 
 
