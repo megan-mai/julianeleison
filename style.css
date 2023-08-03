@@ -106,11 +106,9 @@ a:hover{
     position: absolute !important;
     top: 50%;
     left: 50%;
-    /* top: 50%;
-    left: 50%; */
     width: 100%;
     text-align: center;
-    -ms-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, 50%);
     transform: translate(-50%, -50%);
     /* z-index: 0; */
 }
@@ -173,10 +171,12 @@ a:hover{
 }
 
 #container{
+    border-style: dotted;
     background-color: black !important;
-    /* position: relative; */
-    /* top: 0;
-    left: 0; */
+    position: relative;
+    height: 100vh;
+    top: 0;
+    left: 0;
 }
 
 
@@ -229,24 +229,47 @@ a:hover{
 }
 
 
+html{
+    margin: 0;
+  padding: 0;
+ 
 
-    body{
+}
+
+
+
+    .body{
+        overflow: scroll;
         font-size: 20px !important;
-        transform:  rotate(90deg) translateY(-100%)!important;
-        transform-origin: top left!important;
-        height: 100vw; 
-        width: 100vh;
+        /* transform:  rotate(90deg) translateY(-100%)!important;
+        transform-origin: top left!important; */
+        /* height: auto;
+        width: 100vh; */
     }
     
+
+
+    #backgroundCarousel{
+        transform:  rotate(90deg) translate(-50%, -50%)!important;
+        transform-origin: top left!important;
+        height: 100vw !important;
+        width: 100vh !important;
+
+    }
+
+
     #backgroundCarousel,.carousel-inner, .carousel-item, img{
         height: 100vw !important;
-        width: 100vh!important;
+        width: 100vh !important;
       
     }
 
     #bio{
-        left: 48%;
-        top: 35% !important;
+
+        transform:  rotate(90deg) translate(-50%, -50%)!important;
+        transform-origin: top left!important;
+        left: 50%;
+        top: 45% !important;
         min-width:350px!important;
     }
 
