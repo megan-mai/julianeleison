@@ -107,9 +107,10 @@ a:hover{
     width: 100%;
     text-align: center;
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%) translate3d(0, 0, 10px);
+    transform: translate(-50%, -50%);
     z-index: 0;
-
+    -webkit-transform:translateZ(0px);
+    -webkit-transform:translateZ(0px);
 }
 
 
@@ -138,7 +139,7 @@ a:hover{
     line-height: 2em;
     position: absolute;
     z-index: 3;
-    transform: translate3d(0, 0, 200px);
+    -webkit-transform:translateZ(0px);
     top: 40%;
     left: 50%;
     transform: translateY(-50%);
@@ -166,7 +167,7 @@ a:hover{
     display: flex;
     width: 100%;
     z-index: 1;
-    transform: translate3d(0, 0, 100px);
+    -webkit-transform:translateZ(0px);
     height: 100vh;
 }
 
