@@ -35,7 +35,7 @@ font-style: italic !important;
     height: 300px;
 }
 
-a#email{
+#email{
     text-decoration: underline !important;
 }
 
@@ -64,7 +64,7 @@ ol.carousel-indicators{
 .nav{
     display: inline;
     justify-content: center;
-    margin-top: 2em;
+    margin-top: 1em;
 
 }
 
@@ -87,12 +87,10 @@ margin: .7em .6em 0 .6em !important;
 a{
     color: inherit !important;
     transition: 0.1s;
-    text-decoration: none !important;
 
 }
 
-a#links:hover{
-    text-decoration: none !important;
+a:hover{
     opacity: 50%;
 }
 
@@ -188,6 +186,7 @@ a#links:hover{
 .prev_button:hover{
     cursor: pointer;
     font-size: 32px;
+    text-decoration: none;
 }
 
 .prev_button:active, .next_button:active{
@@ -198,38 +197,20 @@ a#links:hover{
 .next_button:hover{
     cursor: pointer;
     font-size: 32px;
-}
-
-
-@media only screen and (max-width: 900px) {
-    body {
-      font-size: 20px !important;
-
-    }
-
-    #bio{
-        top: 30% !important;
-        min-width:350px!important;
-    }
-
-    .nav{
-        margin-top: 1em;
-    }
-
-    #about-text{
-        height: 50px;
-    }
-
-    #work-text{
-        -webkit-hyphens: auto !important;
-        hyphens: auto;
-        height: 80px;
-    }
+    text-decoration: none;
 
 }
 
 
+
+
+
 @media only screen and (max-width: 900px) {
+
+    a:hover{
+        text-decoration: none !important;
+        opacity: 100%;
+    }
 
 .prev_button:hover, .next_button:hover{
     font-size: 22px;
@@ -242,12 +223,11 @@ a#links:hover{
 
 
     body{
+        font-size: 20px !important;
         transform:  rotate(90deg) translateY(-100%)!important;
         transform-origin: top left!important;
         height: 100vw; 
         width: 100vh;
-
-
     }
     
     #backgroundCarousel,.carousel-inner, .carousel-item, img{
@@ -258,7 +238,23 @@ a#links:hover{
 
     #bio{
         left: 48%;
+        top: 35% !important;
+        min-width:350px!important;
     }
 
+    .nav{
+        margin-top: .6em;
+    }
+
+
+    #about-text{
+        height: 56px;
+    }
+
+    #work-text{
+        -webkit-hyphens: auto !important;
+        hyphens: auto;
+        height: 80px;
+    }
 
 }
