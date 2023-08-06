@@ -25,16 +25,31 @@ html, body {
 
 
 #name{
-    font-size: 24px;
+    font-size: 20px;
     font-style: italic !important;
+}
+
+.underline{
+    text-decoration: underline;
 }
 
 #about{
     line-height: 1.4em !important;
+    font-size: 10pt;
+}
+
+#work{
+    line-height: 1.4em !important;
+    font-size: 10pt;
 }
 
 #about-text{
     height: 300px;
+    font-size: 10pt !important;
+}
+
+#work-text{
+    font-size: 10pt;
 }
 
 #email{
@@ -78,7 +93,7 @@ ol.carousel-indicators{
 
 ol.carousel-indicators li.active {
     opacity: 100%;
-    background-color: black;
+    /* background-color: black; */
 }
 
 
@@ -137,7 +152,7 @@ a:hover{
 
 #bio{
     position: absolute;
-    /* color: black; */
+    color: white;
     opacity: .99 !important;
     line-height: 2em;
     position: absolute;
