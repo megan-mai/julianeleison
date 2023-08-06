@@ -22,8 +22,18 @@ html, body {
     font-family: "garamond" !important;
 }
 
+.linksContainer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
 #links{
-    margin-bottom: .3em;
+    margin: 0 !important;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
 }
 
 
@@ -37,12 +47,10 @@ html, body {
 }
 
 #about{
-    line-height: 1.4em !important;
     font-size: 10pt;
 }
 
 #work{
-    line-height: 1.4em !important;
     font-size: 10pt;
 }
 
@@ -118,7 +126,7 @@ a:hover{
 
 
 #about{
-    margin-top: 2em;
+    /* margin-top: 2em; */
 
 }
 
@@ -160,12 +168,12 @@ a:hover{
     line-height: 1.4em;
     position: absolute;
     /* z-index: 3; */
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translateY(-50%);
     transform: translateX(-50%);
     width: 22%;
-    min-width: 300px;
+    min-width: 100px;
     text-align: center;
 }
 
@@ -230,6 +238,7 @@ a:hover{
 
 @media only screen and (max-width: 700px){
 
+
     #bio{
 
         left: 50%;
@@ -264,6 +273,7 @@ a:hover{
 
 
 @media only screen and (max-width:480px){
+
 
     .carousel-indicators {
         margin: .5em .8em 0 .8em !important;    
@@ -300,6 +310,9 @@ a:hover{
         width: 100vh; */
     }
     
+    #work, #about, #work-text, #about-text{
+        font-size: 20px;
+    }
 
 
     #backgroundCarousel{
@@ -328,11 +341,14 @@ a:hover{
 
     #about-text{
         height: 60px;
+        font-size: 20px !important;
     }
 
     #work-text{
         -webkit-hyphens: auto !important;
         hyphens: auto;
+        font-size: 20px;
+
         height: 90px;
     }
 

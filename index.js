@@ -53,25 +53,18 @@ $('#backgroundCarousel').on('slid.bs.carousel', function () {
     var bio = document.getElementById("bio");
     var indicators = document.getElementsByClassName("carousel-indicators")[0].getElementsByTagName("li");
     var slides = document.getElementsByClassName("carousel-item");
-    const colors = ["black","white","white"];
             
     for(let i=0; i<slides.length; i++){
         if(slides[i].classList.contains('active')){
-
             
             //set all indicators transparent
             for(let j =0; j < 3; j++){
-                // indicators[j].style.backgroundColor = 'transparent';
-                // indicators[j].style.borderColor = colors[i];
+                indicators[j].style.backgroundColor = 'transparent';
             }
 
-            //set color of text based on background img
-            // bio.style.color = colors[i];
-            
 
             //set active indicator to solid
-            // indicators[i].style.backgroundColor = colors[i] ;
-            // indicators[i].style.backgroundColor = 'white !important';
+            indicators[i].style.backgroundColor = "white" ;
 
         }
     }
