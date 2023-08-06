@@ -57,29 +57,36 @@ $('#backgroundCarousel').on('slid.bs.carousel', function () {
             
     for(let i=0; i<slides.length; i++){
         if(slides[i].classList.contains('active')){
-           bio.style.color = colors[i];
-            for(let i =0; i < 3; i++){
-                indicators[i].style.backgroundColor = 'transparent';
+
+            
+            //set all indicators transparent
+            for(let j =0; j < 3; j++){
+                indicators[j].style.backgroundColor = 'transparent';
+                indicators[j].style.borderColor = colors[i];
             }
-            indicators[i].style.backgroundColor = colors[i];;
+
+            //set color of text based on background img
+            bio.style.color = colors[i];
+            
+
+            //set active indicator to solid
+            indicators[i].style.backgroundColor = colors[i] ;
         }
     }
 })
 
 
+// $('#backgroundCarousel').on('slide.bs.carousel', function () {
+//     var indicators = document.getElementsByClassName("ol.carousel-indicators");
+//     const colors = ["black","white","white"];
 
+//     for(let i=0; i<indicators.length; i++){
+//         if(indicators[i].classList.contains('active')){
+//            indicators[i].style.backgroundColor = "black !important";
+//         }
+//     }
+// })
 
-$('#backgroundCarousel').on('slide.bs.carousel', function () {
-    var indicators = document.getElementsByClassName("ol.carousel-indicators");
-    const colors = ["black","white","white"];
-    
-
-    for(let i=0; i<indicators.length; i++){
-        if(indicators[i].classList.contains('active')){
-           indicators[i].style.backgroundColor = "black !important";
-        }
-    }
-})
 
 $('.carousel').carousel({
     interval: 10000
