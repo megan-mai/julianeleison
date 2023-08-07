@@ -1,49 +1,82 @@
+
+/* FONTS */
 @font-face {
     font-family: garamond;
     src: url(ebgaramond.ttf);
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: italic;
     src: url(italicsgaramond.ttf);
     font-style: italic;
-  }
+}
 
-
+/* safari z-index bug */
 *:not(html) {
     -webkit-transform: translate3d(0, 0, 0);
 }
 
 html, body {
     background-color: black !important;
+    font-family: "garamond" !important;
+    font-size: 22px;
     height: 100%;
     overflow: hidden;
-    font-size: 22px;
-    font-family: "garamond" !important;
 }
 
-.linksContainer{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-
+a{
+    color: inherit !important;
+    transition: 0.1s;
 }
 
-#links{
-    margin: 0 !important;
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
-}
-
-
-#name{
-    font-size: 20px;
-    font-style: italic !important;
+a:hover{
+    opacity: 50%;
 }
 
 .underline{
     text-decoration: underline;
+}
+
+#container{
+    background-color: black !important;
+    position: relative;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+/* BIO */
+#bio{
+    position: absolute;
+    color: white;
+    opacity: .99 !important;
+    line-height: 1.4em;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    width: 22%;
+    min-width: 100px;
+    text-align: center;
+}
+
+.accordion {
+    cursor:pointer;
+} 
+  
+/* Note: hidden by default */
+.panel {
+    line-height: 1.3em;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease-in-out !important;
+}
+
+#name{
+    font-size: 20px;
+    font-style: italic !important;
 }
 
 #about{
@@ -67,11 +100,24 @@ html, body {
     text-decoration: underline !important;
 }
 
+.linksContainer{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#links{
+    margin: 0 !important;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+/* indicators */
 ol.carousel-indicators li{
     background-color: transparent;
 
 }
-
 
 /* individual indicators */
 ol.carousel-indicators li,
@@ -88,125 +134,13 @@ ol.carousel-indicators{
     vertical-align: middle;
     position: static !important;
     height: 100% !important;
-
 }
 
 .nav{
     display: inline;
     justify-content: center;
     margin-top: 1em;
-
 }
-
-.next_button, .prev_button{
-    padding: 0 !important;
-}
-
-ol.carousel-indicators li.active {
-    opacity: 100%;
-    /* background-color: black; */
-}
-
-
-.carousel-indicators {
-margin: .4em .6em 0 .6em !important;    
-
-}
-
-
-a{
-    color: inherit !important;
-    transition: 0.1s;
-
-}
-
-a:hover{
-    opacity: 50%;
-}
-
-
-#about{
-    /* margin-top: 2em; */
-
-}
-
-#backgroundCarousel{
-    position: absolute !important;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    text-align: center;
-    -ms-transform: translate(-50%, 50%);
-    transform: translate(-50%, -50%);
-    /* z-index: 0; */
-}
-
-
-
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-    cursor:pointer;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
- 
-  
-  /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    line-height: 1.3em;
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .5s ease-in-out !important;
-  }
-
-
-#bio{
-    position: absolute;
-    color: white;
-    opacity: .99 !important;
-    line-height: 1.4em;
-    position: absolute;
-    /* z-index: 3; */
-    top: 40%;
-    left: 50%;
-    transform: translateY(-50%);
-    transform: translateX(-50%);
-    width: 22%;
-    min-width: 100px;
-    text-align: center;
-}
-
-
-.carousel-item {
-	transition: -webkit-transform 0.5s ease;
-	transition: transform 0.5s ease;
-	transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-	-webkit-backface-visibility: visible;
-	        backface-visibility: visible;
-}
-
-.hidden{
-    display: none;
-}
-
-#footer{
-    position: absolute;
-    display: flex;
-    width: 100%;
-    /* z-index: 1; */
-    height: 100vh;
-}
-
-#container{
-    background-color: black !important;
-    position: relative;
-    height: 100vh;
-    top: 0;
-    left: 0;
-}
-
-
 
 #arrow_container{
     display: flex;
@@ -217,25 +151,57 @@ a:hover{
     float: right;
 }
 
-
-.prev_button:hover{
-    cursor: pointer;
-    font-size: 32px;
-    text-decoration: none;
+.next_button, .prev_button{
+    padding: 0 !important;
 }
 
 .prev_button:active, .next_button:active{
     font-size: 22px;
 }
 
-
-.next_button:hover{
+.prev_button:hover, .next_button:hover{
     cursor: pointer;
     font-size: 32px;
     text-decoration: none;
-
 }
 
+ol.carousel-indicators li.active {
+    opacity: 100%;
+}
+
+.carousel-indicators {
+    margin: .4em .6em 0 .6em !important;    
+}
+
+.hidden{
+    display: none;
+}
+
+
+/* CAROUSEL */
+#backgroundCarousel{
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    -ms-transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
+}
+
+.carousel-item {
+	transition: -webkit-transform 0.5s ease;
+	transition: transform 0.5s ease;
+	transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+	-webkit-backface-visibility: visible;
+	        backface-visibility: visible;
+}
+
+
+
+
+
+/* RESPONSIVE QUERIES */
 @media only screen and (max-width: 700px){
 
 
@@ -272,12 +238,11 @@ a:hover{
 }
 
 
+/* MOBILE */
 @media only screen and (max-width:480px){
-
-
     .carousel-indicators {
         margin: .5em .8em 0 .8em !important;    
-        }
+    }
 
     a:hover{
         text-decoration: none !important;
@@ -292,42 +257,30 @@ a:hover{
         font-size: 32px;
     }
 
-
     html{
         margin: 0;
         padding: 0;
-
-
     }
-
 
     .body{
         overflow: scroll;
         font-size: 20px !important;
-        /* transform:  rotate(90deg) translateY(-100%)!important;
-        transform-origin: top left!important; */
-        /* height: auto;
-        width: 100vh; */
     }
     
     #work, #about, #work-text, #about-text{
         font-size: 20px;
     }
 
-
     #backgroundCarousel{
         transform:  rotate(90deg) translate(-50%, -50%)!important;
         transform-origin: top left!important;
         height: 100vw !important;
         width: 100vh !important;
-
     }
-
 
     .carousel-inner, .carousel-item, img{
         height: 100vw !important;
         width: 100vh !important;
-      
     }
 
     #bio{
@@ -348,13 +301,12 @@ a:hover{
         -webkit-hyphens: auto !important;
         hyphens: auto;
         font-size: 20px;
-
         height: 90px;
     }
 
 }
 
-
+/* if mobile and in landscape mode */
 @media only screen and (max-width: 480px) and (orientation: landscape){
 
     #backgroundCarousel{
@@ -362,7 +314,6 @@ a:hover{
         transform-origin: top left!important;
         height: 100vh !important;
         width: 100vw !important;
-
     }
 
     .carousel-inner, .carousel-item, img{
@@ -378,9 +329,6 @@ a:hover{
         min-width:350px!important;
         line-height: 1.6em;
     }
-
-
-
 }
 
 

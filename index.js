@@ -4,48 +4,39 @@ var aboutText = document.getElementById("about-text");
 var workText = document.getElementById("work-text");
 var open = true;
 
-  work.addEventListener("click", function() {
+work.addEventListener("click", function() {
 
     if (workText.style.maxHeight) {
         workText.style.maxHeight = null;
         work.style.fontStyle = "normal";
-
-
-
     } else {
         workText.style.maxHeight = workText.scrollHeight + "px";
         workText.style.transition = 'max-height .2s linear'
         aboutText.style.maxHeight = null;
         work.style.fontStyle = "italic";
         about.style.fontStyle = "normal";
-
     }
-  });
+});
 
 
-  about.addEventListener("click", function() {
+about.addEventListener("click", function() {
+
     if (aboutText.style.maxHeight) {
         aboutText.style.maxHeight = null;
         about.style.fontStyle = "normal";
-
-
 
     } else {
         aboutText.style.maxHeight = workText.scrollHeight + "px";
         workText.style.maxHeight = null;
         about.style.fontStyle = "italic";
         work.style.fontStyle = "normal";
-
-
-
     }
   });
+
   $(document).click(function(e) {
 	if (!$(e.target).is('.panel-body')) {
     	$('.collapse').collapse('hide');	    
     }
-
-
 });
 
 
@@ -62,7 +53,6 @@ $('#backgroundCarousel').on('slid.bs.carousel', function () {
                 indicators[j].style.backgroundColor = 'transparent';
             }
 
-
             //set active indicator to solid
             indicators[i].style.backgroundColor = "white" ;
 
@@ -70,22 +60,10 @@ $('#backgroundCarousel').on('slid.bs.carousel', function () {
     }
 })
 
-
-// $('#backgroundCarousel').on('slide.bs.carousel', function () {
-//     var indicators = document.getElementsByClassName("ol.carousel-indicators");
-//     const colors = ["black","white","white"];
-
-//     for(let i=0; i<indicators.length; i++){
-//         if(indicators[i].classList.contains('active')){
-//            indicators[i].style.backgroundColor = "black !important";
-//         }
-//     }
-// })
-
-
+// 10 second intervals
 $('.carousel').carousel({
     interval: 10000
-  })
+})
 
 var $carousel = $('#backgroundCarousel');
 $carousel.carousel();
