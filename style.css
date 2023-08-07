@@ -27,10 +27,6 @@ a:hover{
     opacity: 50%;
 }
 
-.underline{
-    text-decoration: underline;
-}
-
 #container{
     background-color: black !important;
     position: relative;
@@ -53,6 +49,9 @@ a:hover{
     width: 250px;
     min-width: 100px;
     text-align: center;
+    padding: 1em 0;
+    /* background-color: black; */
+
 }
 
 .accordion {
@@ -87,7 +86,6 @@ a:hover{
 
 #work-text{
     height: 56px;
-
     font-size: 9pt;
 }
 
@@ -102,7 +100,7 @@ a:hover{
 }
 
 #links{
-    margin: 0 0 .3em 0 !important;
+    margin: 0 0 .4em 0 !important;
     display: flex;
     justify-content: space-between;
     width: 86px;
