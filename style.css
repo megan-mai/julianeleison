@@ -1,14 +1,8 @@
 
 /* FONTS */
 @font-face {
-    font-family: garamond;
-    src: url(ebgaramond.ttf);
-}
-
-@font-face {
-    font-family: italic;
-    src: url(italicsgaramond.ttf);
-    font-style: italic;
+    font-family: baskerville;
+    src: url(BASKVILL.ttf);
 }
 
 /* safari z-index bug */
@@ -18,7 +12,7 @@
 
 html, body {
     background-color: black !important;
-    font-family: "garamond" !important;
+    font-family: "baskerville" !important;
     font-size: 22px;
     height: 100%;
     overflow: hidden;
@@ -56,7 +50,7 @@ a:hover{
     left: 50%;
     transform: translateY(-50%);
     transform: translateX(-50%);
-    width: 22%;
+    width: 20%;
     min-width: 100px;
     text-align: center;
 }
@@ -76,23 +70,22 @@ a:hover{
 
 #name{
     font-size: 20px;
-    font-style: italic !important;
+    text-decoration: underline;
+    text-underline-position: under;
 }
 
-#about{
+#about,#work{
     font-size: 10pt;
 }
 
-#work{
-    font-size: 10pt;
-}
 
 #about-text{
-    height: 300px;
+    height: 40px !important;
     font-size: 10pt !important;
 }
 
 #work-text{
+    height: 56px;
     font-size: 10pt;
 }
 
@@ -107,7 +100,7 @@ a:hover{
 }
 
 #links{
-    margin: 0 !important;
+    margin: 0 0 .3em 0 !important;
     display: flex;
     justify-content: space-between;
     width: 100px;
@@ -122,8 +115,8 @@ ol.carousel-indicators li{
 /* individual indicators */
 ol.carousel-indicators li,
 ol.carousel-indicators li.active {
-  width: .3em;
-  height: .3em;
+  width: .2em;
+  height: .2em;
   margin: .2em;
   border-radius: 100px;
   border-style: solid;
@@ -139,7 +132,7 @@ ol.carousel-indicators{
 .nav{
     display: inline;
     justify-content: center;
-    margin-top: 1em;
+    margin-top: 0em;
 }
 
 #arrow_container{
@@ -153,10 +146,12 @@ ol.carousel-indicators{
 
 .next_button, .prev_button{
     padding: 0 !important;
+    font-size: 18px;
+
 }
 
 .prev_button:active, .next_button:active{
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .prev_button:hover, .next_button:hover{
@@ -170,7 +165,7 @@ ol.carousel-indicators li.active {
 }
 
 .carousel-indicators {
-    margin: .4em .6em 0 .6em !important;    
+    margin: .25em .6em 0 .6em !important;    
 }
 
 .hidden{
@@ -204,9 +199,7 @@ ol.carousel-indicators li.active {
 /* RESPONSIVE QUERIES */
 @media only screen and (max-width: 700px){
 
-
     #bio{
-
         left: 50%;
         top: 40% !important;
         min-width:350px!important;
@@ -232,14 +225,11 @@ ol.carousel-indicators li.active {
         hyphens: auto;
         height: 90px;
     }
-
-
-
 }
 
 
 /* MOBILE */
-@media only screen and (max-width:480px){
+@media only screen and (max-width: 480px){
     .carousel-indicators {
         margin: .5em .8em 0 .8em !important;    
     }
