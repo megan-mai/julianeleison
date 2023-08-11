@@ -54,6 +54,9 @@ a:hover{
     min-width: 100px;
     text-align: center;
     padding: 1em 0;
+
+    /* TOGGLE BACKGROUND OPACITY HERE */
+    /* the very last number is the opacity. 0 is completely transparent and 1 is completely opaque */
     background-color:  rgba(0, 0, 0,  .4);
     transition: background-color .6s;
 }
