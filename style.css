@@ -205,7 +205,7 @@ ol.carousel-indicators li.active {
 
 
 /* RESPONSIVE QUERIES */
-@media only screen and (max-width: 700px){
+/* @media only screen and (max-width: 700px){
 
     #bio{
         left: 50%;
@@ -233,7 +233,7 @@ ol.carousel-indicators li.active {
         hyphens: auto;
         height: 90px;
     }
-}
+} */
 
 
 /* MOBILE */
@@ -264,10 +264,17 @@ ol.carousel-indicators li.active {
         overflow: scroll;
         font-size: 20px !important;
     }
-    
+/*     
     #work, #about, #work-text, #about-text{
         font-size: 20px;
-    }
+    } */
+
+    #links{
+        margin: 1px 0 0 0 !important;
+        display: flex;
+        justify-content: space-between;
+        width: 78px;
+    }    
 
     #backgroundCarousel{
         transform:  rotate(90deg) translate(-50%, -50%)!important;
@@ -284,21 +291,21 @@ ol.carousel-indicators li.active {
     #bio{
         transform:  rotate(90deg) translate(-50%, -50%)!important;
         transform-origin: top left!important;
-        left: 45%;
+        left: 50%;
         top: 45% !important;
-        min-width:350px!important;
+        min-width:150px!important;
         line-height: 1.6em;
     }
 
     #about-text{
         height: 60px;
-        font-size: 20px !important;
+        /* font-size: 20px !important; */
     }
 
     #work-text{
         -webkit-hyphens: auto !important;
         hyphens: auto;
-        font-size: 20px;
+        /* font-size: 20px; */
         height: 90px;
     }
 
@@ -323,7 +330,7 @@ ol.carousel-indicators li.active {
         transform:  rotate(0deg) translate(-50%, -50%)!important;
         transform-origin: top left!important;
         left: 50%;
-        top: 55% !important;
+        top: 45% !important;
         min-width:350px!important;
         line-height: 1.6em;
     }
