@@ -35,7 +35,7 @@
 
 
       <!-- CAROUSEL -->
-      <div id="backgroundCarousel" class="carousel slide" data-ride="carousel">
+      <div id="backgroundCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false">
         <div class="carousel-inner">
           <div id="first-slide" class="carousel-item active">
             <img class="d-block w-100" src="1.png" decoding="sync" alt="First
@@ -50,9 +50,6 @@
               slide">
           </div>
         </div>
-
-
-
       </div>
 
       <!-- BIO -->
@@ -74,7 +71,9 @@
         <div class="panel-container">
 
           <div id="about-text" class="panel text">
-            <p>Julian Eleison is a digital artist currently based in <span class="underline">London</span> </p>
+            <p>Julian Eleison is a digital artist
+              <br>
+               currently based in London</p>
           </div>
 
           <div id="work-text" class="panel text">
@@ -89,7 +88,7 @@
         <nav class="nav">
 
           <div>
-            <a class="prev_button" href="#backgroundCarousel" role="button" data-slide="prev"> ←
+            <a class="prev_button nav_button" id="prev_button" href="#backgroundCarousel" role="button" data-slide="prev" onclick = "stopInterval()"> ←
             </a>
           </div>
      
@@ -100,7 +99,7 @@
           </ol>
       
           <div>
-            <a class="next_button" href="#backgroundCarousel" role="button" data-slide="next"> →
+            <a class="next_button nav_button" href="#backgroundCarousel" role="button" data-slide="next"  onclick = "stopInterval()"> →
             </a>
           </div>
         </nav>

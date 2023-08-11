@@ -44,26 +44,39 @@ $('#backgroundCarousel').on('slid.bs.carousel', function () {
     var bio = document.getElementById("bio");
     var indicators = document.getElementsByClassName("carousel-indicators")[0].getElementsByTagName("li");
     var slides = document.getElementsByClassName("carousel-item");
+    const colors = [" rgba(0, 0, 0,  .3)"," rgba(0, 0, 0,  0)"," rgba(0, 0, 0,  .7)"];
+    
             
     for(let i=0; i<slides.length; i++){
         if(slides[i].classList.contains('active')){
+
             
             //set all indicators transparent
             for(let j =0; j < 3; j++){
                 indicators[j].style.backgroundColor = 'transparent';
             }
 
+            //set color of bg based on background img
+            bio.style.backgroundColor = colors[i];
+            
+
             //set active indicator to solid
             indicators[i].style.backgroundColor = "white" ;
-
         }
     }
 })
 
+
+// var myCarousel = document.querySelector('#backgroundCarousel')
+// var carousel = new bootstrap.Carousel(myCarousel, {
+//   interval: 2000,
+//   wrap: false
+// })
+
 // 10 second intervals
-$('.carousel').carousel({
-    interval: 10000
-})
+// $('.carousel').carousel({
+//     interval: 1000
+// })
 
 var $carousel = $('#backgroundCarousel');
 $carousel.carousel();
@@ -92,3 +105,11 @@ $(".carousel-indicators li").on('click',function(){
    //remove siblings active class and add it to current clicked item
    handled=true; //set global variable to true to identify whether indicator changing was handled or not.
 });
+
+
+//pauses the autoscroll after clicking on arrow
+$(".nav_button").on('click',function(){
+    $carousel.carousel('pause');
+});
+   
+  

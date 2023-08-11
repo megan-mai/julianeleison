@@ -18,6 +18,10 @@ html, body {
     overflow: hidden;
 }
 
+p{
+    margin: 0 !important;
+}
+
 a{
     color: inherit !important;
     transition: 0.1s;
@@ -42,7 +46,7 @@ a:hover{
     opacity: .99 !important;
     line-height: 1.2em;
     position: absolute;
-    top: 36%;
+    top: 38%;
     left: 50%;
     transform: translateY(-50%);
     transform: translateX(-50%);
@@ -50,8 +54,8 @@ a:hover{
     min-width: 100px;
     text-align: center;
     padding: 1em 0;
-    /* background-color: black; */
-
+    background-color:  rgba(0, 0, 0,  .4);
+    transition: background-color .6s;
 }
 
 .accordion {
@@ -69,6 +73,7 @@ a:hover{
 
 #name{
     font-size: 21px;
+    padding-top: .4em;
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-position: under;
@@ -80,13 +85,13 @@ a:hover{
 
 
 #about-text{
-    height: 40px !important;
-    font-size: 9pt !important;
+    height: auto !important;
+    font-size: 10pt !important;
 }
 
 #work-text{
-    height: 50px;
-    font-size: 9pt;
+    height: auto;
+    font-size: 10pt;
 }
 
 #email{
@@ -100,7 +105,7 @@ a:hover{
 }
 
 #links{
-    margin: 0 0 .4em 0 !important;
+    margin: 1px 0 0 0 !important;
     display: flex;
     justify-content: space-between;
     width: 86px;
@@ -130,9 +135,9 @@ ol.carousel-indicators{
 }
 
 .nav{
-    display: inline;
+    display: block;
     justify-content: center;
-    margin-top: 0em;
+    padding-top: .2em;
 }
 
 #arrow_container{
@@ -146,6 +151,7 @@ ol.carousel-indicators{
 
 .next_button, .prev_button{
     padding: 0 !important;
+    margin: 0px !important;
     font-size: 18px;
 
 }
@@ -165,7 +171,7 @@ ol.carousel-indicators li.active {
 }
 
 .carousel-indicators {
-    margin: .25em .6em 0 .6em !important;    
+    margin: .24em .6em 0 .6em !important;    
 }
 
 .hidden{
