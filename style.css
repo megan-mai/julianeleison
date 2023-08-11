@@ -90,6 +90,8 @@ a:hover{
 }
 
 #work-text{
+    -webkit-hyphens: auto !important;
+    hyphens: auto;
     height: auto;
     font-size: 10pt;
 }
