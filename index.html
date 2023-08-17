@@ -31,7 +31,7 @@
 
     <main id="container">
 
-     
+
 
 
       <!-- CAROUSEL -->
@@ -49,13 +49,17 @@
             <img class="d-block w-100" src="3.png" decoding="sync" alt="Third
               slide">
           </div>
+          <div id="fourth-slide" class="carousel-item">
+            <img class="d-block w-100" src="3.png" decoding="sync" alt="Third
+              slide">
+          </div>
         </div>
       </div>
 
       <!-- BIO -->
-      
-      <!-- TOGGLE BACKGROUND OPACITY HERE 
-      the very last number is the opacity. 0 is completely transparent and 1 is completely opaque  -->
+
+      <!-- TOGGLE BACKGROUND OPACITY HERE -->
+      <!-- the very last number is the opacity. 0 is completely transparent and 1 is completely opaque  -->
       <div id="bio">
         <!-- name -->
         <div class="text" id="name">
@@ -80,13 +84,13 @@
           </div>
 
           <div id="work-text" class="panel text">
-            <p>For a larger selection of recent work, please email me at <a style = "text-decoration: underline; text-decoration-thickness: 1px;"
-                href="mailto:studio@julianeleison.com">studio@julianeleison.com</a>
-              to book an in-person studio visit</p>
-          </div>
+            <div id="inner-work-text">  For a larger selection of recent work, please email me at <a style = "text-decoration: underline; text-decoration-thickness: 1px;"
+              href="mailto:studio@julianeleison.com">studio@julianeleison.com</a>
+            to book an in-person studio visit</div>
+
         </div>
 
-    
+
         <!-- arrows and dots -->
         <nav class="nav">
 
@@ -94,13 +98,17 @@
             <a class="prev_button nav_button" id="prev_button" href="#backgroundCarousel" role="button" data-slide="prev" onclick = "stopInterval()"> ←
             </a>
           </div>
-     
+          <div>
+
+          <!-- indicators -->
           <ol class="carousel-indicators">
             <li data-target="#backgroundCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#backgroundCarousel" data-slide-to="1" ></li>
             <li data-target="#backgroundCarousel" data-slide-to="2" ></li>
+            <li data-target="#backgroundCarousel" data-slide-to="3" ></li>
+
           </ol>
-      
+        </div>
           <div>
             <a class="next_button nav_button" href="#backgroundCarousel" role="button" data-slide="next"  onclick = "stopInterval()"> →
             </a>
